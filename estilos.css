@@ -1,16 +1,62 @@
-body {
-    background-color:rgb(226, 224, 206);
-    font-family: Lucida Sans;
-    font-size:larger;}
+* {
+    background-color:rgb(244, 213, 192);
+    background: linear-gradient(to right, rgb(244, 213, 192), rgb(255, 211, 180),rgb(255, 191, 151));
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;}   
 
-h1 {color:rgb(34, 134, 68)}
+h1 {color:rgb(75, 128, 93);
+    text-align: center;}
 
-.imagenes img {
-   width: 30%;    
-   max-width: 500px;
+p{background: none;}
+h2{background: none;}
+label{background: none;}
+input{background: none;}
+img{background: none;}
+form{background: none;}
+/* soluciona problema con el degradado, buscar atajo y ver iconos */
+
+.columnas{display: flex;}
+    #info{margin-top: 160px;
+        margin-left: 120px;
+    background: none;}
+    /* info personal y foto en una misma altura */
+    #foto {
     display: block;
-    margin-left: auto;
+    width: 450px;
+    height: 450px;
+    margin-left: 5%;
     margin-right: auto;
-   }
+    margin-top: 100px;
+    margin-bottom: 50px;
+    min-width: 450px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: rgb(75, 128, 93) solid 5px;
+    box-shadow: 0 0 30px gray; }
+   /* acomoda foto circular usando border radius. Tambien se podría hacer usando un círculo con position relative 
+   y la foto con position absolute */
 
+#info h2, #info p{font-size: 35px;
+font-family: Georgia, Times, 'Times New Roman', serif;
+color: rgb(185, 138, 17);}
+
+.logos{overflow: hidden;
+background: none;    
+float: left;
+margin-left: 5px;
+margin-top: 0px;
+padding:10px;}
+#logo-linkedin {
+ background: none;
+ margin-left: 5%;}
+#logo-insta {
+    background: none;}
+div a {background: none;}
+/* acomoda los iconos de insta y linkedin uno al lado del otro */
+
+a:link{color: blue;}
+a:visited{color: rgb(111, 25, 192);}
+a:hover{color: rgb(2, 42, 42);}
+a:active{color: rgb(244, 45, 45);}
+/* estilo de links */
 
