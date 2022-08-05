@@ -1,31 +1,66 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8>
-<title>Mi CV</title>
+    <meta charset="UTF-8">
+    <title>Mi CV</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/04383b6d9d.js" crossorigin="anonymous"></script> 
+    <!-- el renglón de arriba es el link de los iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Edu+SA+Beginner&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <!-- los 3 renglones anteriores son el link de google fonts -->
 </head>
-<body style="background-color:rgb(226, 224, 206)"> 
-<h1 style="color:rgb(34, 134, 68)">CONRADO IVANI</h1>
-<p style="text-align:center"><img src="https://i.imgur.com/tLIztdP.jpg" width="300" height="550" alt="mi foto"></p>
-<div><h2>Información personal</h2>
-<p>Fecha de Nacimiento: 11-11-1988 (33 años).</p>
-<p>Nacionalidad: Argentina.</p>
-<p>Ciudad: Bahía Blanca, Buenos Aires.</p>
-</div>
-<div><h2>Estudios</h2>
-<p>Estudio complementario: Professional Full-Stack Developer. U.T.N Bs. As
- (En curso, 2022)</p>
-<p>Estudio terciario: Técnico Superior en Seguridad e Higiene. U.T.N Bs. As (Completo con título en trámite, 2015-2020).</p>
-<p>Estudio Terciario: Técnico Superior en Administración de PyMes. I.S.F.T Nº191 (Completo, 2012-2015).</p> 
-<p>Estudio Secundario: Escuela San Francisco de Asís.Orientación: Economía y gestión de las organizaciones (2004-2007).</p>
-<p>Estudio Primario: Escuela San Francisco de Asís, (1994-2003).</p></div>
-<div><h2>Contacto</h2>
+<body> 
+      
+<h1><i class="fa-solid fa-share fa-beat" style="background: none;"></i> CONRADO IVANI-CURRICULUM VITAE</h1></div>
+
+<div class="columnas">
+        <div id="info"><h2><i class="fa-solid fa-circle-info" style="background: none;"></i> Información personal</h2>
+        <p>Fecha de Nacimiento: 11-11-1988 (33 años).</p>
+        <p>Nacionalidad: Argentina.</p>
+        <p>Ciudad: Bahía Blanca, Buenos Aires.</p>
+        </div> <br>
+        <div id="foto"><img src="https://i.imgur.com/sf0h5wy.jpg" alt="mi foto"></div></div> 
+
+        <div><h2><i class="fa-solid fa-book"></i> Estudios</h2>
+        <p>Estudio complementario: Professional Full-Stack Developer. U.T.N Bs. As
+        (En curso, 2022)</p>
+        <p>Estudio terciario: Técnico Superior en Seguridad e Higiene. U.T.N Bs. As (Completo con título en trámite, 2015-2020).</p>
+        <p>Estudio Terciario: Técnico Superior en Administración de PyMes. I.S.F.T Nº191 (Completo, 2012-2015).</p> 
+        <p>Estudio Secundario: Escuela San Francisco de Asís.Orientación: Economía y gestión de las organizaciones (2004-2007).</p>
+        <p>Estudio Primario: Escuela San Francisco de Asís, (1994-2003).</p></div><br>
+
+<h2><i class="fa-solid fa-mobile-screen" style="background: none;"></i> Contacto</h2>
 <p>Completa el siguiente formulario y serás contactado a la brevedad:</p>
-<form> 
-<p>Nombre y Apellido: <input type="text"></p>
-<p>Correo electrónico: <input type="text"></p>
-</form></div>
-<div><h2>Click aquí para mas información personal</h2> 
-<a href=https://www.linkedin.com/in/conra-ivani-887558241/ target="_blank"><img src="https://imgur.com/OQUXwNp.jpg" width="30" height="30" alt="logo linkedin"></a>
+<form action="/enviando formulario" method="post"> 
+
+    <label for="nom">Nombre y Apellido:</label> 
+    <input id="nom" type="text" name=Nombre y Apellido placeholder="Nombre y Apellido"/>
+    <br><br>
+    <label for="correo">Correo electrónico:</label> 
+    <input id="correo" type="email" name=Correo electrónico placeholder="Correo electrónico"/>
+    <br><br>
+    <label for=Consulta>Consulta:</label>
+    <br>
+    <textarea cols="45" rows=10 id="Consulta" placeholder="Ingrese aquí su consulta" name="Consulta" for="consulta"></textarea>
+    <br><br>
+    <button type="submit">Enviar</button> 
+    <button type="reset">Borrar</button> 
+</form>
+<br>
+<footer>
+<div id="mail">
+<a href="mailto:conra_ivani@hotmail.com">Aquí </a>
+<p>tienes mi e-mail!</p>
 </div>
+<br>
+
+<h2><i class="fa-solid fa-computer-mouse" style="background: none;"></i> Click aquí para mas información personal:</h2>
+
+<div class="logos-container">
+<a href=https://www.linkedin.com/in/conra-ivani-887558241/ target="_blank"><div class=logos id="logo-linkedin"><img src="https://imgur.com/OQUXwNp.jpg" width="50" alt="logo-linkedin"></div></a>
+<a href=https://www.instagram.com/conraivani/ target="_blank"><div class=logos id="logo-insta"><img src="https://imgur.com/M6yBwxS.jpg" width="50" alt="logo-insta"></div></a>
+</div></footer>
 </body>
 </html>
