@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+/* inicio header */
+header {
+    background-color: #1e9a83;
+    display: flex;
+    flex: center;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+header #foto {
+    display: flex;
+    flex: left;
+    max-width: 960px;
+    margin: 0;
+    padding: 0;
+    border: solid 2px rgb(10, 60, 22);
+}
+
+#titulo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    max-width: 960px;
+    margin: auto;
+    color: black;
+    font-size: 40px;
+    font: weight 50px;
+    font-weight: bold;
+}
+
+/* fin header */
+
+/* inicio botonera */
+nav {
+    background-color: #7dd1c2;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a.activo {
+    background-color: #2f656e;
+}
+
+/* fin botonera */
+
+/* inicio footer  */
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+/* fin footer */
+
+.holder {
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+
+/* inicio home */
+
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bienvenidos {
+    flex: 35%;
+    padding-right: 20px;
+}
+
+.bienvenidos h2 {
+    color: #1e9a83;
+}
+
+.objetivos {
+    flex: 60%;
+}
+
+.objetivos h2 {
+    color: #1e9a83;
+}
+
+@media (max-width:1300px) {
+    .bienvenidos{flex: 100%;}
+}
+
+/* fin home */
+
+/* inicio mi perfil */
+.miperfil {
+    border: solid 3px#1e9a83;
+}
+
+.miperfil h1 {
+    text-align: center;
+}
+
+.miperfilcol {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.miperfilcol h1 {
+    color: #1e9a83;
+}
+
+.miperfilcol h2 {
+    text-align: center;
+    color: #61c8b5
+}
+
+.miperfilcol ul {
+    text-align: left;
+}
+
+.columnap {
+    border: solid 3px #1e9a83;
+margin: 10px;
+    padding: 10px;
+    text-align: center;
+    flex: 20%;
+}
+
+@media (max-width:1200px) {
+    .columnap{flex: 40%;}
+}
+
+@media (max-width:800px) {
+    .columnap{flex: 100%;}
+}
+
+#micv h1 {
+    text-align: center;
+    border: solid 3px#1e9a83;
+    padding: 20px;
+}
+
+
+
+/* fin mi perfil */
+
+/* inicio mis trabajos */
+/* fin mis trabajo */
+
+/* inicio servicios */
+/* fin servicios */
+
+/* inicio contacto */
+/* fin contacto */
