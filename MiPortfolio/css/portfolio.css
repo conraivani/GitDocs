@@ -113,7 +113,8 @@ footer {
 }
 
 .objetivos h2 {
-    
+    color: #1e9a83;
+
 }
 
 @media (max-width:1300px) {
@@ -127,12 +128,14 @@ footer {
 /* inicio mi perfil */
 .miperfil {
     border: solid 3px#1e9a83;
+    margin-top: 10px;
 }
 
 .miperfil h1 {
     text-align: center;
     color: #1e9a83;
 }
+
 .miperfilcol {
     display: flex;
     justify-content: space-between;
@@ -176,7 +179,6 @@ footer {
     text-align: center;
     border: solid 3px#1e9a83;
     color: #1e9a83;
-    padding: 20px;
 }
 
 /* fin mi perfil */
@@ -191,6 +193,7 @@ footer {
 .mistrabajos h3 {
     /* display: inline; para que el color de fondo solo ocupe el ancho de las palabras */
     background-color: rgb(201, 201, 201);
+    padding: 10px;
     text-align: center;
     color: #1e9a83;
 }
@@ -200,6 +203,45 @@ footer {
     text-align: center;
     font-weight: 150;
     font-style: italic;
+}
+
+.carousel {
+    background-color: #1e9a83;
+    ;
+}
+
+.carousel-item {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    min-height: 704px;
+    max-width: 306px;
+    margin-left: 38%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item h6 {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.card-columns .card {
+    display: inline-block;
+}
+
+.card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+
+.carousel-indicators {
+    background-color: #1e9a83;
+    opacity: 50%;
 }
 
 /* fin mis trabajos */
@@ -248,11 +290,14 @@ footer {
 /* inicio contacto */
 
 .contactos {
-    display:flex;
+    display: flex;
     justify-content: center;
-gap: 20%;
+    gap: 20%;
 }
-.contactos h1{color: #1e9a83;}
+
+.contactos h1 {
+    color: #1e9a83;
+}
 
 .datos .listacont .logos {
     text-align: center;
