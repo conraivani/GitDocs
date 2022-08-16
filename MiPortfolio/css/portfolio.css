@@ -113,11 +113,13 @@ footer {
 }
 
 .objetivos h2 {
-    color: #1e9a83;
+    
 }
 
 @media (max-width:1300px) {
-    .bienvenidos{flex: 100%;}
+    .bienvenidos {
+        flex: 100%;
+    }
 }
 
 /* fin home */
@@ -129,8 +131,8 @@ footer {
 
 .miperfil h1 {
     text-align: center;
+    color: #1e9a83;
 }
-
 .miperfilcol {
     display: flex;
     justify-content: space-between;
@@ -138,7 +140,7 @@ footer {
 }
 
 .miperfilcol h1 {
-    color: #1e9a83;
+    color: black
 }
 
 .miperfilcol h2 {
@@ -152,35 +154,142 @@ footer {
 
 .columnap {
     border: solid 3px #1e9a83;
-margin: 10px;
+    margin: 10px;
     padding: 10px;
     text-align: center;
     flex: 20%;
 }
 
 @media (max-width:1200px) {
-    .columnap{flex: 40%;}
+    .columnap {
+        flex: 40%;
+    }
 }
 
 @media (max-width:800px) {
-    .columnap{flex: 100%;}
+    .columnap {
+        flex: 100%;
+    }
 }
 
 #micv h1 {
     text-align: center;
     border: solid 3px#1e9a83;
+    color: #1e9a83;
     padding: 20px;
 }
-
-
 
 /* fin mi perfil */
 
 /* inicio mis trabajos */
-/* fin mis trabajo */
+
+.mistrabajos h1 {
+    text-align: center;
+    color: #1e9a83;
+}
+
+.mistrabajos h3 {
+    /* display: inline; para que el color de fondo solo ocupe el ancho de las palabras */
+    background-color: rgb(201, 201, 201);
+    text-align: center;
+    color: #1e9a83;
+}
+
+.trabajo .trabajolink {
+    display: block;
+    text-align: center;
+    font-weight: 150;
+    font-style: italic;
+}
+
+/* fin mis trabajos */
 
 /* inicio servicios */
+
+.servicio {
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid grey;
+    border-radius: 30px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.servicios h1 {
+    text-align: center;
+    color: #1e9a83;
+}
+
+.servicio h4 {
+    margin: 23px;
+    color: #1e9a83;
+    font-size: 2rem;
+    border-bottom: 1px solid #1e9a83;
+    padding-bottom: 10px;
+}
+
+.servicio ul {
+    font-style: italic;
+}
+
+.servicio img {
+    border-radius: 15px;
+    display: block;
+    max-width: 225px;
+}
+
+.servicio:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 /* fin servicios */
 
 /* inicio contacto */
+
+.contactos {
+    display:flex;
+    justify-content: center;
+gap: 20%;
+}
+.contactos h1{color: #1e9a83;}
+
+.datos .listacont .logos {
+    text-align: center;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+    background-color: antiquewhite;
+}
+
+.formulario input[type="text"] {
+    background-color: antiquewhite;
+}
+
+.formulario input[type="submit"] {
+    background: #1e9a83;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #7dd1c2;
+}
+
+
 /* fin contacto */
