@@ -13,21 +13,36 @@
         // ARRAY DE NÚMEROS:
         const numeros = [100, 1, 5, 1500, 10];
 
-        const num1 = numeros[0];
-        const num2 = numeros[1];
-        const num3 = numeros[2];
-        const num4 = numeros[3];
-        const num5 = numeros[4];
+        let mayor = 0;
+		for (let i = 0; i < numeros.length; i++) {
+			if (numeros[i] > mayor) {
+				mayor = numeros[i];
+			}
+		}
 
-        if (num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5) { document.write(`Él mayor es el número ${num1}`) }
+		console.log(`El mayor de ${numeros} es ${mayor}`);
+		document.write(`El mayor de ${numeros} es ${mayor}`);
 
-        else if (num2 > num1 && num2 > num3 && num2 > num4 && num2 > num5) { document.write(`Él mayor es el número ${num2}`) }
+        // EXPLICACION EN MINUTO 9 DE CLASE 4 U3
 
-        else if (num3 > num1 && num3 > num2 && num3 > num4 && num3 > num5) { document.write(`Él mayor es el número ${num3}`) }
+        // const num1 = numeros[0];
+        // const num2 = numeros[1];
+        // const num3 = numeros[2];
+        // const num4 = numeros[3];
+        // const num5 = numeros[4];
 
-        else if (num4 > num2 && num4 > num3 && num4 > num1 && num4 > num5) { document.write(`Él mayor es el número ${num4}`) }
+        // if (num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5) { document.write(`Él mayor es el número ${num1}`) }
 
-        else if (num5 > num2 && num5 > num3 && num5 > num4 && num5 > num1) { document.write(`Él mayor es el número ${num5}`) }
+        // else if (num2 > num1 && num2 > num3 && num2 > num4 && num2 > num5) { document.write(`Él mayor es el número ${num2}`) }
+
+        // else if (num3 > num1 && num3 > num2 && num3 > num4 && num3 > num5) { document.write(`Él mayor es el número ${num3}`) }
+
+        // else if (num4 > num2 && num4 > num3 && num4 > num1 && num4 > num5) { document.write(`Él mayor es el número ${num4}`) }
+
+        // else if (num5 > num2 && num5 > num3 && num5 > num4 && num5 > num1) { document.write(`Él mayor es el número ${num5}`) }
+
+
+
 
     </script>
 </body>
