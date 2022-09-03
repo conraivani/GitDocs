@@ -1,0 +1,26 @@
+.cuadrados{display: flex;
+flex-wrap: wrap;
+}
+
+#rojo {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background: red;
+    margin-right: 15px;
+}
+
+#verde {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background: green;
+    margin-right: 15px;
+}
+
+#azul {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background: blue
+}
