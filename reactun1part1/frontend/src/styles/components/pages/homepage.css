@@ -1,0 +1,37 @@
+
+
+/* inicio home */
+
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bienvenidos {
+    flex: 35%;
+    padding-right: 20px;
+}
+
+.bienvenidos h2 {
+    color: #1e9a83;
+}
+
+.objetivos {
+    flex: 60%;
+}
+
+.objetivos h2 {
+    color: #1e9a83;
+
+}
+
+@media (max-width:1300px) {
+    .bienvenidos {
+        flex: 100%;
+    }
+}
+
+/* fin home */
+
