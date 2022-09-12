@@ -1,10 +1,10 @@
-import react from 'react';
+import React from 'react';
 
-const footer = (props) => {
+const Footer = (props) => {
     return (
-        <footer>
+        <Footer>
             <p>Sitio creado por Conrado Ivani</p>
-        </footer>)
+        </Footer>)
 };
 
-export default footer; 
+export default Footer; 

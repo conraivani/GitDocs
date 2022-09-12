@@ -1,5 +1,5 @@
 import React from "react";
-const novedades = (props) => {
+const Novedades = (props) => {
     return (
     <section>
     <h2>Novedades</h2>
@@ -10,4 +10,4 @@ const novedades = (props) => {
     )
 }
 
-export default novedades;
+export default Novedades;

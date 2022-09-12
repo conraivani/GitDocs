@@ -1,14 +1,14 @@
 import React from "react";
-const miperfil = (props) => {
+const Miperfil = (props) => {
     return (
     
 <main className="holder">
 
-<div class="miperfil">
+<div className="miperfil">
             <h1>Competencias y conocimientos</h1>
         </div>
-        <div class="miperfilcol">
-            <div class="columnap">
+        <div className="miperfilcol">
+            <div className="columnap">
                 <h1>Desarrollador web full stack (en progreso)</h1>
                 <h2>Descripción</h2>
                 <ul>
@@ -23,7 +23,7 @@ const miperfil = (props) => {
                 </ul>
             </div>
 
-            <div class="columnap">
+            <div className="columnap">
                 <h1>Marketing Digital</h1>
                 <h2>Descripción</h2>
                 <ul>
@@ -40,4 +40,4 @@ const miperfil = (props) => {
 </main>
 )}
 
-export default miperfil;
+export default Miperfil;
