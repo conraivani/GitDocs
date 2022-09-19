@@ -39,7 +39,7 @@ const Contacto = (props) => {
                             <div className="logos" id="logo-telefono"><img src="https://imgur.com/tuu6DA3.jpg" width="50"
                                 alt="logo-linkedin" /></div>
                         </a></p>
-                        <p><a href="mailto: conra_ivani@hotmail.com" rel="noreferrer" target="_blank" /></p>
+                        <p><a href="mailto: conra_ivani@hotmail.com" rel="noreferrer" target="_blank"></a></p>
                         <div className="logos" id="logo-correo"><img src="https://imgur.com/9uCknvY.jpg" width="50"
                             alt="logo-linkedin" /></div>
                     </div></div></div>
