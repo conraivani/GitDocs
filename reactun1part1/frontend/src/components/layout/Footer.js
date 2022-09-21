@@ -3,9 +3,9 @@ import '../../styles/components/layout/Footer.css';
 
 const Footer = (props) => {
     return (
-        <Footer>
+        <footer>
             <p>Sitio creado por Conrado Ivani</p>
-        </Footer>)
+        </footer>)
 };
 
 export default Footer; 

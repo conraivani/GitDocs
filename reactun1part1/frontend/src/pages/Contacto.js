@@ -8,19 +8,19 @@ const Contacto = (props) => {
                     <h1>Contacto Rápido</h1>
                     <form action="" method="" class="formulario">
                         <p>
-                            <label for="Nombre y Apellido">Nombre</label>
+                            <label for="Nombre y Apellido">Nombre:</label>
                             <input type="text" name="" />
                         </p>
                         <p>
-                            <label for="E-mail">E-mail</label>
+                            <label for="E-mail">E-mail:</label>
                             <input type="text" name="" />
                         </p>
                         <p>
-                            <label for="Teléfono">Teléfono</label>
+                            <label for="Teléfono">Teléfono:</label>
                             <input type="text" name="" />
                         </p>
                         <p>
-                            <label for="Mensaje">Mensaje</label>
+                            <label for="Mensaje">Mensaje:</label>
                             <textarea name=""></textarea>
                         </p>
                         <p>
@@ -39,9 +39,9 @@ const Contacto = (props) => {
                             <div className="logos" id="logo-telefono"><img src="https://imgur.com/tuu6DA3.jpg" width="50"
                                 alt="logo-linkedin" /></div>
                         </a></p>
-                        <p><a href="mailto: conra_ivani@hotmail.com" rel="noreferrer" target="_blank"></a></p>
-                        <div className="logos" id="logo-correo"><img src="https://imgur.com/9uCknvY.jpg" width="50"
-                            alt="logo-linkedin" /></div>
+                        <p><a href="mailto: conra_ivani@hotmail.com" rel="noreferrer" target="_blank"><div className="logos" id="logo-correo"><img src="https://imgur.com/9uCknvY.jpg" width="50"
+                            alt="logo-linkedin" /></div></a></p>
+                        
                     </div></div></div>
         </main>
 

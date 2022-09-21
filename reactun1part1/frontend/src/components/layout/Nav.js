@@ -5,7 +5,7 @@ import '../../styles/components/layout/Nav.css';
 
 const Nav = (props) => {
     return (
-        <Nav>
+        <nav>
             <div>
                 <ul>
                     <li><NavLink activeClassname="activo" exact to="/">Homepage</NavLink></li>
@@ -15,7 +15,7 @@ const Nav = (props) => {
                 </ul>
             </div>
 
-        </Nav> 
+        </nav> 
 
 
 )

@@ -1,11 +1,11 @@
-footer{background-color: #ccc;
+footer{background-color: rgb(85, 82, 82);
 clear: both;
 color: #333;
 padding: 3em 0;
 margin-top: 2em;}
 
 footer p{
-    font: size 0.7em;
+    font-size: 15px;
     font-style:italic;
     text-align:center;
     margin:0;
