@@ -11,21 +11,16 @@ router.get('/',  async function (req, res, next) {
     layout: 'admin/layout',
     usuario: req.session.nombre,
     novedades
-<<<<<<< HEAD
+
   });
 });
 router.get('/agregar', (req, res, next) => {
   res.render('admin/agregar', {
     layout: 'admin/layout'
   });
-=======
+
   });
-});
-router.get('/agregar', (req, res, next) => {
-  res.render('admin/agregar', {
-    layout: 'admin/layout'
-  });
-});
+
 
 router.post('/agregar', async(req, res, next) => {
   try {
@@ -46,7 +41,7 @@ router.post('/agregar', async(req, res, next) => {
       error:true, message:'No se cargo la novedad'
     });
   }
->>>>>>> 713f1676eaf60a460b52bb9dac991166385aa545
+
 });
 
 router.post('/agregar', async(req, res, next) => {
