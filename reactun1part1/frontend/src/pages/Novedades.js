@@ -1,16 +1,36 @@
 import React from "react";
 import '../styles/components/pages/novedades.css'
-const Novedades = (props) => {
-    return (
-    <section>
-    <h2>Novedades</h2>
-    <h3>titulo</h3>
-    <h4>subtitulo</h4>
-    <article><p>Lorem ipsum dolor sit amet. In explicabo adipisci est voluptas iste aut beatae provident cum impedit natus ea vitae iure sed
-    ullam quibusdam et voluptas Quis. Eum enim dolorem nam blanditiis ipsa et obcaecati incidunt eum facilis aspernatur!
-    Sit numquam eius id itaque quia ut amet culpa ut rerum nisi et veritatis aspernatur ut voluptate beatae id ipsam sunt</p>
-    </article> </section>
-    )
-}
+import {useState, useEffect} from 'react';
+import axios from 'axios'; 
+import NovedadItem from '../components/novedades/NovedadItem';
 
+const Novedades = (props) => {
+
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+
+    useEffect (() =>{
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+        cargarNovedades();
+    },[]);
+
+    return (
+        <section className="holder">
+    <h2>Novedades</h2>
+    {
+        loading ? (
+            <p>Cargando...</p>
+        ) : ( 
+            novedades.map(item => <NovedadItem key ={item.id}
+                title={item.titulo} subtitle={item.subtitulo}
+                imagen={item.imagen} body={item.cuerpo} link={item.link}/>)
+            )}
+    </section>
+    )};
+    
 export default Novedades;
