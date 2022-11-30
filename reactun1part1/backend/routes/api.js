@@ -3,6 +3,7 @@ var router = express.Router();
 var novedadesModel = require('./../models/novedadesModel');
 var cloudinary = require('cloudinary').v2;
 var nodemailer = require('nodemailer');
+const { text } = require('express');
 
 /* GET home page. */
 router.get('/novedades',  async function (req, res, next) {
@@ -12,9 +13,9 @@ router.get('/novedades',  async function (req, res, next) {
   novedades = novedades.map(novedades => {
     if (novedades.img_id) {
       const imagen = cloudinary.url(novedades.img_id, {
-        width: 960,
-        height: 200,
-        crop: 'fill'
+        width: 100,
+        height: 100,
+        crop: 'fill',
       });
       return {
         ...novedades, imagen

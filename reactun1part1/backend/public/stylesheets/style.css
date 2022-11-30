@@ -1,4 +1,4 @@
-footer{background-color: rgb(85, 82, 82);
+footer{background-color: rgb(114, 112, 112);
   clear: both;
   color: #333;
   padding: 3em 0;
@@ -23,6 +23,11 @@ footer{background-color: rgb(85, 82, 82);
     position: relative;
     bottom: .8em;
     margin:0%}
+
+    header p {color: white;
+      font-size: 2.5em;
+      font-style: italic;
+      font-weight: 100;}
 
     nav{background-color: rgb(158, 97, 23);
       margin-bottom: 2em;
