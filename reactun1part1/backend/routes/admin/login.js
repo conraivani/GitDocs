@@ -8,10 +8,9 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/logout', function (req, res, next) {
-  res.session.destroy();
+  req.session.destroy();
   res.render('admin/login', {
-    layout: 'admin/layout'
-  });
+    layout: 'admin/layout' });
 });
 
 router.post('/', async (req, res, next) => {

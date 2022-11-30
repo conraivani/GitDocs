@@ -8,13 +8,10 @@ const Homepage = (props) => {
             </div>
             <div className="columnas">
                 <div className="bienvenidos">
-                    <h2>Bienvenidos</h2>
-                    <p>Lorem ipsum dolor sit amet. In explicabo adipisci est voluptas iste aut beatae provident cum impedit natus ea vitae iure sed
-                        ullam quibusdam et voluptas Quis. Eum enim dolorem nam blanditiis ipsa et obcaecati incidunt eum facilis aspernatur!
-                        Sit numquam eius id itaque quia ut amet culpa ut rerum nisi et veritatis aspernatur ut voluptate beatae id ipsam sunt.</p>
-                    <p>Lorem ipsum dolor sit amet. In explicabo adipisci est voluptas iste aut beatae provident cum impedit natus ea vitae iure sed
-                        ullam quibusdam et voluptas Quis. Eum enim dolorem nam blanditiis ipsa et obcaecati incidunt eum facilis aspernatur!
-                        Sit numquam eius id itaque quia ut amet culpa ut rerum nisi et veritatis aspernatur ut voluptate beatae id ipsam sunt.</p>
+                    <h2>Bienvenidos a mi sitio web</h2>
+                    <p> Hola, mundo!
+                        Mi nombre es Conrado Ivani y hace un tiempo me aventuré en el área del desarrollo web. Cada día descubro algo nuevo en este mundo, lo que lo hace sumamente interesante y casi infinito.
+                        Los invito a conocer mi perfíl con el fin de algún día poder serles de utilidad. Gracias por su atención!</p>
                 </div>
                 <div className="objetivos">
                     <h2>Objetivos</h2>

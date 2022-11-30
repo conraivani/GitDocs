@@ -1,12 +1,35 @@
-footer{background-color: rgb(85, 82, 82);
-clear: both;
-color: #333;
-padding: 3em 0;
-margin-top: 2em;}
+footer {
+    background-color: rgb(85, 82, 82);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px outset #beab1f;
+}
 
-footer p{
-    font-size: 15px;
-    font-style:italic;
-    text-align:center;
-    margin:0;
+#flotante {
+    position: fixed;
+    margin-left: 92%;
+    padding: 1%;
+    bottom: 1%;
+}
+
+#flotante img {
+    width: 70%;
+    height: 70%;
+}
+
+.redes img {
+    width: 60px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.derechos {
+    border: 2px outset #beab1f;
+    background: #bcbcbc;
+    flex: 100%;
+    text-align: center;
+    padding-bottom: 10px;
 }

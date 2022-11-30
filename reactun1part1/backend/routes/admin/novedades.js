@@ -35,6 +35,8 @@ router.get('/',  async function (req, res, next) {
     novedades
   });
 });
+
+
 router.get('/agregar', (req, res, next) => {
   res.render('admin/agregar', {
     layout: 'admin/layout'
@@ -67,7 +69,7 @@ router.post('/agregar', async(req, res, next) => {
     console.log(error)
     res.render('admin/agregar', {
       layout: 'admin/layout',
-      error:true, message:'No se cargo la novedad'
+      error: true, message:'No se cargo la novedad'
     });
   }
 
@@ -104,7 +106,7 @@ if (novedad.img_id) {
   await (destroy(novedad.img_id));
 }
 
-  await novedadesModel.deleteNovedadesById(id);
+  await novedadesModel.deleteNovedadById(id);
   res.redirect('/admin/novedades');
 });
 
@@ -115,7 +117,7 @@ router.get('/modificar/:id', async (req, res, next) => {
   
   var novedad = await novedadesModel.getNovedadById(id);
 
-  res.render('/admin/modificar', {
+  res.render('admin/modificar', {
     layout: 'admin/layout',
     novedad
   });
